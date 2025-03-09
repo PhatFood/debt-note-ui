@@ -3,7 +3,7 @@ import axios from 'axios'
 
 
 
-export const getLeadsContent = createAsyncThunk('/leads/content', async () => {
+export const getLeadsContent = createAsyncThunk('/contacts/content', async () => {
 	const response = await axios.get('/api/users?page=2', {})
 	return response.data;
 })
